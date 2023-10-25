@@ -4,6 +4,11 @@ body {
   padding: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 :after,
 :before {
@@ -12,6 +17,10 @@ body {
 
 .box {
   display: none;
+}
+
+.container {
+  box-sizing: content-box;
 }
 
 body {
@@ -23,8 +32,23 @@ body {
   display: block;
 }
 
-div {
-  display: block;
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
+
+img {
+  vertical-align: middle;
 }
 
 label {
@@ -115,13 +139,162 @@ h2 {
   font-size: 2rem;
 }
 
-.img-container img {
-  max-width: 100%;
-  max-height: 100%;
+.btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
 }
 
-.item.software .block {
-  padding: 15px;
+.btn-primary {
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
+}
+
+.container.section {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+.homepage-branded-text .brand-background {
+  background-color: #333645;
+}
+
+.cms-block .brand-background {
+  color: #fff;
+}
+
+.cms-block .brand-background .h1 {
+  margin-top: -6px;
+  margin-bottom: 40px;
+}
+
+.cms-block .brand-background .h1,
+.cms-block .brand-background .h2,
+.cms-block .brand-background .h3,
+.cms-block .brand-background a:not(.btn),
+.cms-block .brand-background h1,
+.cms-block .brand-background h2,
+.cms-block .brand-background h3,
+.cms-block .brand-background strong {
+  color: #fff !important;
+}
+
+.cms-block .brand-background span.client-quote {
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.cms-block .brand-background span.client-quote-author {
+  font-weight: 600;
+  color: #a3a8ac;
+  font-size: 1.1rem;
+}
+
+.cms-block a:not(.btn),
+.cms-block strong:not(.btn) {
+  font-weight: 600;
+}
+
+.cms-block .brand-background .btn-primary-inverse {
+  color: #fff;
+  background-color: #272936;
+}
+
+.cms-block .brand-background .btn-google,
+.cms-block .brand-background .btn-primary-inverse,
+.cms-block .brand-background .btn-trustpilot {
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.cms-block .brand-background .btn-google {
+  background-color: #4387f6;
+  margin-right: 8px;
+}
+
+.cms-block .brand-background .btn-trustpilot {
+  background-color: #00b67b;
+  display: inline-flex;
+  white-space: nowrap;
+  max-width: fit-content;
+}
+
+.cms-block .brand-background .btn-google,
+.cms-block .brand-background .btn-trustpilot {
+  margin-top: 25px;
+  border: none;
+}
+
+.btn-trustpilot {
+  position: relative;
+  /* Make sure the parent is positioned */
+}
+
+em.icon-arrow-right {
+  margin-left: 12px;
+  margin-right: -4px;
+}
+
+.bar {
+  padding-top: 50px;
+}
+
+.latest-articles .headings-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cms-block strong:not(.btn) {
+  font-weight: 600;
+  color: #333645;
+}
+
+.cms-block img {
+  height: auto;
+}
+
+.article-list .item.img-container {
+  position: relative;
+}
+
+.img-container img {
+  max-width: 100%;
+}
+
+.article-list .item .img-container .category {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  background-color: #4183d7;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+.article-list .item.web .img-container .category {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  background-color: #926fb1;
+  z-index: 1;
+  margin-right: 15px;
 }
 
 .block {
@@ -129,6 +302,17 @@ h2 {
   border: 1px solid #ccc;
   padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.latest-articles .section {
+  padding-top: 15px;
+}
+
+.article-list .item {
+  font-size: 0.8125rem;
+  margin-top: 30px;
+  position: relative;
+  top: 0;
 }
 
 .article-list .item .block h3 {
@@ -149,12 +333,73 @@ h2 {
   font-weight: 600;
 }
 
+.article-list .item .block p {
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+}
+
+.article-list .item .block .btn {
+  font-weight: 400;
+}
+
+.btn.btn-software {
+  color: #fff;
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
+.btn.btn-web {
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.article-list .item .user {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.user {
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.user > .avatar {
+  width: 1%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.user > .details {
+  padding-left: 20px;
+  line-height: 1.375rem;
+}
+
+.details > strong.text-primary {
+  font-weight: 600;
+  color: #333645 !important;
+}
+
 .client-item-container {
   display: flex;
 }
 
 .client-item-container {
   justify-content: space-between;
+}
+
+.client-item-container img {
+  max-height: 70px;
+  width: auto !important;
+  max-width: 200px;
+  filter: grayscale(1);
 }
 
 .form {
@@ -178,7 +423,7 @@ h2 {
 }
 
 .sign-up {
-  margin: 30px auto 0;
+  margin: 0px auto 0;
   padding: 50px 0;
 }
 
@@ -213,21 +458,6 @@ label.pretty-checkbox .button [type=checkbox] {
 
 div > .form-group {
   margin: 0 0 15px;
-}
-
-.btn {
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #333645;
-  border-color: #333645;
 }
 
 footer .footer-row .footer-social-logos a {
@@ -313,6 +543,11 @@ footer .footer-row .footer-logo img {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .article-list .item .block h3 {
+    min-height: 3rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm {
     display: none;
@@ -325,6 +560,12 @@ footer .footer-row .footer-logo img {
   .col-md-3 {
     width: 25%;
   }
+  .article-list .item p {
+    min-height: 66px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
 }
 @media (min-width: 1260px) {
   .container {
@@ -332,6 +573,9 @@ footer .footer-row .footer-logo img {
   }
   footer .footer-row .row .footer-menu {
     margin-bottom: 40px;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
   }
 }
 

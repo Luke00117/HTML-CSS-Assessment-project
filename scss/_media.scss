@@ -9,7 +9,7 @@
     }
 
     .container {
-        width: 750px
+        width: 750px;
     }
 }
 
@@ -30,6 +30,13 @@
     }
 }
 
+@media (min-width: 768px) {
+    .article-list .item .block h3 {
+        min-height: 3rem;
+
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .hidden-sm {
         display: none;
@@ -39,22 +46,34 @@
 
 @media (min-width: 992px) {
     .container {
-        width: 970px
+        width: 970px;
     }
 
     .col-md-3 {
         width: 25%;
     }
 
+    .article-list .item p {
+        min-height: 66px;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
 }
 
 @media (min-width: 1260px) {
     .container {
-        width: 1200px
+        width: 1200px;
     }
 
     footer .footer-row .row .footer-menu {
         margin-bottom: 40px;
+    }
+
+    .col-lg-4 {
+        width: 33.33333333%;
     }
 
 
