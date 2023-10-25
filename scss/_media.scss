@@ -18,6 +18,10 @@
     .footer-bottom .license ul {
         display: flex;
     }
+
+    footer .footer-row .footer-logo {
+        width: 320px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -37,10 +41,22 @@
     .container {
         width: 970px
     }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
 }
 
 @media (min-width: 1260px) {
     .container {
         width: 1200px
     }
+
+    footer .footer-row .row .footer-menu {
+        margin-bottom: 40px;
+    }
+
+
+
 }

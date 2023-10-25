@@ -6,21 +6,9 @@
     box-sizing: border-box;
 }
 
-#container {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+.box {
+    display: none;
 }
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -52,14 +40,10 @@ label.required:after {
 footer {
     background-color: #323544;
     color: #fff;
-    padding: 27px 0 0;
-    position: relative;
+    padding: 47px 0 0;
+
 }
 
-footer .footer-company-info {
-    display: flex;
-    justify-content: space-between;
-}
 
 footer h4 {
     color: #fff;
@@ -88,21 +72,6 @@ footer ul li a,
 footer ul li a:hover {
     color: #fff;
 
-}
-
-footer .footer-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-
-footer .footer-row .footer.logo {
-    width: 250px;
-}
-
-footer .footer-row .footer.logo img {
-    width: 100%;
 }
 
 

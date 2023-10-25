@@ -10,19 +10,8 @@ body {
   box-sizing: border-box;
 }
 
-#container {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.box {
+  display: none;
 }
 
 body {
@@ -54,13 +43,7 @@ label.required:after {
 footer {
   background-color: #323544;
   color: #fff;
-  padding: 27px 0 0;
-  position: relative;
-}
-
-footer .footer-company-info {
-  display: flex;
-  justify-content: space-between;
+  padding: 47px 0 0;
 }
 
 footer h4 {
@@ -88,21 +71,6 @@ footer ul li {
 footer ul li a,
 footer ul li a:hover {
   color: #fff;
-}
-
-footer .footer-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-grow: 1;
-}
-
-footer .footer-row .footer.logo {
-  width: 250px;
-}
-
-footer .footer-row .footer.logo img {
-  width: 100%;
 }
 
 ul {
@@ -142,15 +110,71 @@ h4 {
   color: #333645;
 }
 
+.h2,
+h2 {
+  font-size: 2rem;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item.software .block {
+  padding: 15px;
+}
+
+.block {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.article-list .item .block h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.article-list .item .block h3 .read-time {
+  display: inline;
+  text-transform: uppercase;
+  color: rgba(51, 54, 69, 0.5);
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+.article-list .item .block h3 a {
+  color: #4183d7;
+  font-weight: 600;
+}
+
+.client-item-container {
+  display: flex;
+}
+
+.client-item-container {
+  justify-content: space-between;
+}
+
 .form {
   display: block;
   width: 100%;
+}
+
+.sign-up-inputs-wrapper {
+  display: flex;
+}
+
+.sign-up-input {
+  flex-grow: 1;
 }
 
 .newsletter-full-width,
 .sign-up {
   background-color: #ddd;
   margin: 0;
+  display: block;
 }
 
 .sign-up {
@@ -161,17 +185,59 @@ h4 {
 .form-control {
   height: 47px;
   padding: 5px 15px;
-  border-color: #ccc;
-  width: 100%;
+  width: 96%;
   background-color: #fff;
   background-image: none;
   border: 1px solid #e5e5e5;
-  border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  display: block;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555;
+}
+
+label.pretty-checkbox {
+  line-height: 32px;
+  cursor: pointer;
+}
+
+label.pretty-checkbox .button {
+  border-radius: 3px;
+  border: 3px solid #333645;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+label.pretty-checkbox .button [type=checkbox] {
+  display: none;
+}
+
+div > .form-group {
+  margin: 0 0 15px;
+}
+
+.btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
+}
+
+footer .footer-row .footer-social-logos a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 26px;
+  padding: 12px 22px 16px;
+  background-color: #212330;
+  margin-right: 7px;
 }
 
 .footer-bottom {
@@ -179,14 +245,21 @@ h4 {
   justify-content: space-between;
   font-size: 0.8125rem;
   padding-top: 10px;
-  background: #212330;
+  width: 100%;
   left: 0;
+  background: #212330;
   border: 0;
 }
 
+footer .footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .footer-menu {
-  margin: 0 20px 0 20px;
-  flex: 1 200px;
+  width: 200px;
+  box-sizing: border-box;
 }
 
 .footer-bottom ul {
@@ -204,9 +277,18 @@ h4 {
   width: 100%;
 }
 
-.icon::before {
-  display: inline-block;
-  text-rendering: auto;
+footer .footer-row {
+  flex-direction: row;
+}
+
+footer .footer-row .footer-logo img {
+  width: 100%;
+}
+
+.footer-company-info {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
 }
 
 @media (min-width: 768px) {
@@ -221,6 +303,9 @@ h4 {
 @media (min-width: 480px) {
   .footer-bottom .license ul {
     display: flex;
+  }
+  footer .footer-row .footer-logo {
+    width: 320px;
   }
 }
 @media (max-width: 767px) {
@@ -237,10 +322,16 @@ h4 {
   .container {
     width: 970px;
   }
+  .col-md-3 {
+    width: 25%;
+  }
 }
 @media (min-width: 1260px) {
   .container {
     width: 1200px;
+  }
+  footer .footer-row .row .footer-menu {
+    margin-bottom: 40px;
   }
 }
 
