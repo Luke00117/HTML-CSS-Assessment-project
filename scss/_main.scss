@@ -5,7 +5,6 @@
 .main-navigation {
     background-color: #333645;
     position: relative;
-    display: none;
 }
 
 
@@ -41,6 +40,338 @@ h2 {
     background-color: #333645;
     border-color: #333645;
 }
+
+// ==========================================================================
+// Banner Section
+// ==========================================================================
+
+.stage,
+.stage-image,
+.img-cover-modern-container {
+    position: relative;
+}
+
+.img-cover-modern-container picture img {
+    max-width: 100%;
+}
+
+
+#banner .owl-carousel .outer-stage .stage .stage-image .content {
+    position: relative;
+    z-index: 4;
+    padding: 3.75rem;
+}
+
+#banner .owl-carousel .outer-stage .stage .stage-image {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner.is-home .stage-image {
+    min-height: 550px;
+}
+
+#banner .owl-carousel .outer-stage .stage .stage-image>* .h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0 0 1.25rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+#banner .owl-carousel .outer-stage .stage .stage-image>* p {
+    margin-bottom: .375rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+#banner .owl-carousel .outer-stage .stage .stage-image>* .btn {
+    margin-top: 1.938rem;
+    margin-bottom: 1.125rem;
+}
+
+.btn.btn-lg,
+.btn.btn-lg>i {
+    line-height: 50px;
+}
+
+.btn.btn-lg {
+    height: auto;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+}
+
+.btn>i.pull-right {
+    margin-right: -4px;
+    margin-left: 12px;
+}
+
+#banner .owl-carousel .outer-stage .stage .stage-image>* {
+    color: #fff;
+}
+
+#banner .owl-carousel .outer-stage .stage .stage-image .img-cover-modern-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content-container {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+// ==========================================================================
+// Our Services section
+// ==========================================================================
+
+.actual-fix {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-list .h1 {
+    font-size: 2.7rem;
+    margin-bottom: -10px;
+    margin-top: -13px;
+}
+
+
+
+.service-list .block {
+    text-decoration: none;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+}
+
+.service-list .block>span {
+    display: block;
+}
+
+.service-list .block>span.icon {
+    height: 65px;
+    width: 65px;
+    margin: 0 auto 17px;
+    background-color: #333645;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+
+.service-list .block>span.icon span {
+    font-size: 2rem;
+    line-height: 62px;
+}
+
+.service-list .block>span.h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+}
+
+.service-list .block>span.p {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    margin-bottom: 13px;
+    font-weight: 400;
+}
+
+.service-list .block.software:hover,
+.service-list .block.software>span.icon {
+    background-color: #67809f;
+}
+
+.service-list .block:hover {
+    color: #fff;
+    top: -10px;
+}
+
+.service-list .block:hover>span.h2 {
+    color: #fff;
+}
+
+.service-list .block:hover>span.btn-container .btn {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.service-list .block.software:hover>span.icon {
+    background-color: #fff;
+    color: #67809f;
+}
+
+.service-list .block.software:hover>.btn-container .btn {
+    color: #67809f;
+}
+
+
+// IT card style
+
+.service-list .block.it:hover,
+.service-list .block.it>span.icon {
+    background-color: #4183d7;
+}
+
+.btn.btn-it {
+    color: #fff;
+    background-color: #4183d7;
+    border-color: #4183d7;
+}
+
+.service-list .block.it:hover>span.icon {
+    background-color: #fff;
+    color: #4183d7;
+}
+
+.service-list .block.it:hover>.btn-container .btn {
+    color: #4183d7;
+}
+
+
+// Digital card style
+
+.service-list .block.digital:hover,
+.service-list .block.digital>span.icon {
+    background-color: #2ecc71;
+}
+
+.btn.btn-digital {
+    color: #fff;
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.service-list .block.digital:hover>span.icon {
+    background-color: #fff;
+    color: #2ecc71;
+}
+
+.service-list .block.digital:hover>.btn-container .btn {
+    color: #2ecc71;
+}
+
+
+// Telecoms card style 
+
+.service-list .block.telecoms:hover,
+.service-list .block.telecoms>span.icon {
+    background-color: #d64541;
+}
+
+.btn.btn-telecoms {
+    color: #fff;
+    background-color: #d64541;
+    border-color: #d64541;
+}
+
+.service-list .block.telecoms:hover>span.icon {
+    background-color: #fff;
+    color: #d64541;
+}
+
+.service-list .block.telecoms:hover>.btn-container .btn {
+    color: #d64541;
+}
+
+// Web card style 
+
+.service-list .block.web:hover,
+.service-list .block.web>span.icon {
+    background-color: #926fb1;
+}
+
+.btn.btn-web {
+    color: #fff;
+    background-color: #926fb1;
+    border-color: #926fb1;
+}
+
+.service-list .block.web:hover>span.icon {
+    background-color: #fff;
+    color: #926fb1;
+}
+
+.service-list .block.web:hover>.btn-container .btn {
+    color: #926fb1;
+}
+
+
+// Cyber Security card style
+
+.service-list .block.security:hover,
+.service-list .block.security>span.icon {
+    background-color: #f62459;
+}
+
+.btn.btn-security {
+    color: #fff;
+    background-color: #f62459;
+    border-color: #f62459;
+}
+
+.service-list .block.security:hover>span.icon {
+    background-color: #fff;
+    color: #f62459;
+}
+
+.service-list .block.security:hover>.btn-container .btn {
+    color: #f62459;
+}
+
+
+// Developer Training card style 
+
+.service-list .block.developer-course:hover,
+.service-list .block.developer-course>span.icon {
+    background-color: #ce4125;
+}
+
+.btn.btn-developer-course {
+    color: #fff;
+    background-color: #ce4125;
+    border-color: #ce4125;
+}
+
+.service-list .block.developer-course:hover>span.icon {
+    background-color: #fff;
+    color: #ce4125;
+}
+
+.service-list .block.developer-course:hover>.btn-container .btn {
+    color: #ce4125;
+}
+
+// ==========================================================================
+// Award Section
+// ==========================================================================
+
+.stage-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 // ==========================================================================
 // Brand Section
@@ -138,6 +469,26 @@ em.icon-arrow-right {
     margin-right: -4px;
 }
 
+#col-override {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.fa-fa-star {
+    margin-bottom: 25px;
+
+}
+
+.fa-fa-star {
+    display: inline;
+    margin-right: -15px;
+    max-height: 45px;
+}
+
+.fa {
+    line-height: 1;
+}
+
 // ==========================================================================
 // Latest News Section
 // ==========================================================================
@@ -181,7 +532,6 @@ em.icon-arrow-right {
     text-transform: uppercase;
     background-color: #4183d7;
     z-index: 1;
-    margin-right: 15px;
 }
 
 .article-list .item.web .img-container .category {
