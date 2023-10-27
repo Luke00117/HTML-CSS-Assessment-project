@@ -93,6 +93,13 @@
         z-index: 3;
     }
 
+    .main-navigation .container>ul>.nav-item:hover>.sub-menu-banner,
+    .main-navigation .container>ul>.nav-item:hover>div,
+    .main-navigation .container>ul>li:hover>.sub-menu-banner,
+    .main-navigation .container>ul>li:hover>div {
+        display: block;
+    }
+
 
 }
 
@@ -117,6 +124,17 @@
 
     .col-lg-4 {
         width: 33.33333333%;
+    }
+
+    header .inner .header-btn {
+        display: inline-block !important;
+    }
+
+    header .search-form-wrapper--tablet>.search-form>.form-control {
+        display: inline-block !important;
+        border-radius: 0;
+        width: 240px;
+        height: 56px
     }
 
 

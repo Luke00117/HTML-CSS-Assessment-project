@@ -37,6 +37,113 @@ h2 {
 
 
 // ==========================================================================
+// Header and Seach Bar
+// ==========================================================================
+
+header {
+    display: block;
+    background-color: #fff;
+}
+
+
+header .inner {
+    padding: 20px 0;
+}
+
+header .inner .logo img {
+    max-width: 100%;
+    display: block;
+}
+
+header .inner .actions {
+    float: right;
+    padding: 7px 0;
+}
+
+header .inner .actions .btn {
+    height: 56px;
+    line-height: 46px;
+    font-size: 1.125rem;
+    float: left;
+}
+
+header .inner .actions .btn.btn-it:hover {
+    color: #fff;
+    background-color: #2a6ec6;
+    border-color: #2665b5;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #999aa2;
+    border-color: #999aa2;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #84858f;
+    border-color: #797a85;
+}
+
+header .inner .actions>*+* {
+    margin-left: 20px;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+header .search-form-wrapper--tablet>.search-form button {
+    outline: none;
+    padding: 7px 20px 3px;
+    height: 56px;
+    font-size: 1.063rem;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: #999aa2;
+    color: #fff;
+    margin-left: -5px;
+}
+
+header .search-form-wrapper--tablet>.search-form button .icon {
+    font-size: 23px;
+}
+
+.btn.hamburger.btn-primary {
+    color: #fff;
+    background-color: #333645;
+    border-color: #333645;
+}
+
+header .inner .actions .btn span:not(.title) {
+    font-size: 1.438rem;
+    line-height: 45px;
+}
+
+.btn.hamburger .hamburger-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hamburger-box {
+    width: 33px;
+    height: 19px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    font-size: 2rem !important;
+}
+
+
+
+
+
+// ==========================================================================
 // Navigation styling
 // ==========================================================================
 
@@ -71,10 +178,6 @@ h2 {
     line-height: 1;
 }
 
-.main-navigation .container>ul>.nav-item.software>a span,
-.main-navigation .container>ul>li.software>a span {
-    color: #67809f;
-}
 
 .main-navigation .container>ul>.nav-item>a span,
 .main-navigation .container>ul>li>a span {
@@ -90,10 +193,6 @@ h2 {
     padding-bottom: 1px;
 }
 
-.main-navigation .container>ul>.nav-item.software>.sub-menu-banner,
-.main-navigation .container>ul>li.software>.sub-menu-banner {
-    color: #526781;
-}
 
 .main-navigation .container>ul>.nav-item>.sub-menu-banner,
 .main-navigation .container>ul>.nav-item>div,
@@ -173,6 +272,204 @@ h2 {
     display: flex;
     align-items: center;
 }
+
+.main-navigation .container>ul>.nav-item>.sub-menu-banner .sub-menu li a .link-icon-container,
+.main-navigation .container>ul>.nav-item>.sub-menu-banner>ul li a .link-icon-container,
+.main-navigation .container>ul>.nav-item>div .sub-menu li a .link-icon-container,
+.main-navigation .container>ul>.nav-item>div>ul li a .link-icon-container,
+.main-navigation .container>ul>li>.sub-menu-banner .sub-menu li a .link-icon-container,
+.main-navigation .container>ul>li>.sub-menu-banner>ul li a .link-icon-container,
+.main-navigation .container>ul>li>div .sub-menu li a .link-icon-container,
+.main-navigation .container>ul>li>div>ul li a .link-icon-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-width: 25px;
+}
+
+.main-navigation .container>ul>.nav-item>.sub-menu-banner .sub-menu li a .link-text,
+.main-navigation .container>ul>.nav-item>.sub-menu-banner>ul li a .link-text,
+.main-navigation .container>ul>.nav-item>div .sub-menu li a .link-text,
+.main-navigation .container>ul>.nav-item>div>ul li a .link-text,
+.main-navigation .container>ul>li>.sub-menu-banner .sub-menu li a .link-text,
+.main-navigation .container>ul>li>.sub-menu-banner>ul li a .link-text,
+.main-navigation .container>ul>li>div .sub-menu li a .link-text,
+.main-navigation .container>ul>li>div>ul li a .link-text {
+    margin-left: 10px;
+}
+
+
+// ==========================================================================
+// Nav Color Styles
+// ==========================================================================
+
+
+// Software Colors
+.main-navigation .container>ul>.nav-item.software>a span,
+.main-navigation .container>ul>li.software>a span {
+    color: #67809f;
+}
+
+.main-navigation .container>ul>.nav-item.software:hover,
+.main-navigation .container>ul>li.software:hover {
+    background-color: #67809f;
+}
+
+.main-navigation .container>ul>.nav-item.software>.sub-menu-banner,
+.main-navigation .container>ul>li.software>.sub-menu-banner {
+    color: #526781;
+}
+
+.main-navigation .software .sub-menu-banner {
+    background-color: #526781;
+}
+
+
+// IT Colors
+.main-navigation .container>ul>.nav-item.it>a span,
+.main-navigation .container>ul>li.it>a span {
+    color: #4183d7;
+}
+
+.main-navigation .container>ul>.nav-item.it:hover,
+.main-navigation .container>ul>li.it:hover {
+    background-color: #4183d7;
+}
+
+.main-navigation .container>ul>.nav-item.it>.sub-menu-banner,
+.main-navigation .container>ul>li.it>.sub-menu-banner {
+    color: #286abd;
+}
+
+.main-navigation .it .sub-menu-banner {
+    background-color: #286abd;
+}
+
+
+// Digital Marketing Colors
+.main-navigation .container>ul>.nav-item.digital>a span,
+.main-navigation .container>ul>li.digital>a span {
+    color: #2ecc71;
+}
+
+.main-navigation .container>ul>.nav-item.digital:hover,
+.main-navigation .container>ul>li.digital:hover {
+    background-color: #2ecc71;
+}
+
+.main-navigation .container>ul>.nav-item.digital>.sub-menu-banner,
+.main-navigation .container>ul>li.digital>.sub-menu-banner {
+    color: #25a25a;
+}
+
+.main-navigation .digital .sub-menu-banner {
+    background-color: #25a25a;
+}
+
+
+// Telecoms Colors 
+.main-navigation .container>ul>.nav-item.telecoms>a span,
+.main-navigation .container>ul>li.telecoms>a span {
+    color: #d64541;
+}
+
+.main-navigation .container>ul>.nav-item.telecoms:hover,
+.main-navigation .container>ul>li.telecoms:hover {
+    background-color: #d64541;
+}
+
+.main-navigation .container>ul>.nav-item.telecoms>.sub-menu-banner,
+.main-navigation .container>ul>li.telecoms>.sub-menu-banner {
+    color: #bc2c28;
+}
+
+.main-navigation .telecoms .sub-menu-banner {
+    background-color: #bc2c28;
+}
+
+
+// Web Design Colors
+.main-navigation .container>ul>.nav-item.web>a span,
+.main-navigation .container>ul>li.web>a span {
+    color: #926fb1;
+}
+
+.main-navigation .container>ul>.nav-item.web:hover,
+.main-navigation .container>ul>li.web:hover {
+    background-color: #926fb1;
+}
+
+.main-navigation .container>ul>.nav-item.web>.sub-menu-banner,
+.main-navigation .container>ul>li.web>.sub-menu-banner {
+    color: #79539a;
+}
+
+.main-navigation .web .sub-menu-banner {
+    background-color: #79539a;
+}
+
+
+// Security Colors
+.main-navigation .container>ul>.nav-item.security>a span,
+.main-navigation .container>ul>li.security>a span {
+    color: #f62459;
+}
+
+.main-navigation .container>ul>.nav-item.security:hover,
+.main-navigation .container>ul>li.security:hover {
+    background-color: #f62459;
+}
+
+.main-navigation .container>ul>.nav-item.security>.sub-menu-banner,
+.main-navigation .container>ul>li.security>.sub-menu-banner {
+    color: #de093f;
+}
+
+.main-navigation .security .sub-menu-banner {
+    background-color: #de093f;
+}
+
+
+// Dev Course Colors
+.main-navigation .container>ul>.nav-item.developer-course>a span,
+.main-navigation .container>ul>li.developer-course>a span {
+    color: #ce4125;
+}
+
+.main-navigation .container>ul>.nav-item.developer-course:hover,
+.main-navigation .container>ul>li.developer-course:hover {
+    background-color: #ce4125;
+}
+
+.main-navigation .container>ul>.nav-item.developer-course>.sub-menu-banner,
+.main-navigation .container>ul>li.developer-course>.sub-menu-banner {
+    color: #a3331d;
+}
+
+.main-navigation .developer-course .sub-menu-banner {
+    background-color: #a3331d;
+}
+
+
+
+
+.main-navigation .container>ul>.nav-item.developer-course:hover>a span,
+.main-navigation .container>ul>.nav-item.digital:hover>a span,
+.main-navigation .container>ul>.nav-item.it:hover>a span,
+.main-navigation .container>ul>.nav-item.security:hover>a span,
+.main-navigation .container>ul>.nav-item.software:hover>a span,
+.main-navigation .container>ul>.nav-item.telecoms:hover>a span,
+.main-navigation .container>ul>.nav-item.web:hover>a span,
+.main-navigation .container>ul>li.developer-course:hover>a span,
+.main-navigation .container>ul>li.digital:hover>a span,
+.main-navigation .container>ul>li.it:hover>a span,
+.main-navigation .container>ul>li.security:hover>a span,
+.main-navigation .container>ul>li.software:hover>a span,
+.main-navigation .container>ul>li.telecoms:hover>a span,
+.main-navigation .container>ul>li.web:hover>a span {
+    color: #fff;
+}
+
 
 // ==========================================================================
 // Banner Section
@@ -506,6 +803,13 @@ h2 {
     justify-content: space-between;
 }
 
+.greyscale {
+    filter: grayscale(1);
+}
+
+.greyscale:hover {
+    filter: grayscale(0);
+}
 
 
 // ==========================================================================
@@ -794,6 +1098,10 @@ div.fa-fa-star {
     width: auto !important;
     max-width: 200px;
     filter: grayscale(1);
+}
+
+.client-item-container img:hover {
+    filter: grayscale(0);
 }
 
 
